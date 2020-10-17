@@ -1,0 +1,24 @@
+// this file contains no actual styles and only imports the rest of the partials used in the project
+
+// initial setup / things that need to come first
+@import 'base/reset';
+@import 'base/global';
+
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// vendors
+
+// base
+@import 'base/typography';
+
+// layout
+@import 'layout/container';
+
+// components
+@import 'components/buttons';
+
+// pages
+
+// themes

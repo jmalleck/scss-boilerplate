@@ -1,0 +1,22 @@
+// mixin for centering with flexbox or taking optional parameters
+@mixin flex-layout($justification: center, $alignment: center, $direction: row) {
+    display: flex;
+    align-items: $alignment;
+    flex-direction: $direction;
+    justify-content: $justification;
+}
+
+
+
+
+// general use subtle shadow style
+@mixin basic-shadow($flip: false) {
+    $length: 5px;
+    @if ($flip) {
+        $length: -5px
+    }
+
+    -webkit-box-shadow: $length 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: $length 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: $length 5px 5px 0px rgba(0,0,0,0.3);
+}
